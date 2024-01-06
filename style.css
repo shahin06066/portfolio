@@ -1,8 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
-
 
   @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600&family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
 
 * {
     margin: 0;
@@ -18,6 +15,10 @@
 
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+  
 
 :root {
     --bg-color: #081b29;
@@ -1087,11 +1088,39 @@ section:nth-child(odd) .animate.scroll,
 
     .home-content h1 {
         font-size: 5rem;
+        text-align: left;
+        width: 100%;
     }
 
     .heroBtnWrper {
         width: 100%;
     }
+
+    .home-content p {
+        text-align: left;
+        transform: translateX(-7px);
+    }
+
+
+    .home-content .text-animate h3 {
+        width: 100%;
+        text-align: left;
+        transform: translateX(-37px);
+    }
+
+    .heroBtnWrper{
+        justify-content: flex-start;
+        gap: 25px;
+    }
+
+
+.home-sci{
+    width: 100%;
+    justify-content: flex-start;
+    gap: 20px;    
+    transform: translateX(14px);
+}
+
 
 }
 
