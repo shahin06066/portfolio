@@ -351,20 +351,38 @@
 
     <script>
 
+
+
+
+
+// window.addEventListener("scroll",()=>{
+    
+//     var hight=window.scrollY;
+// });
+
+
+
+
+
+
+
         $(document)
           .mousemove(function(e) {
+
+            const scrollHight=window.scrollY;
+
             $('.cursor')
               .eq(0)
               .css({
                 left: e.clientX,
-                top: e.clientY
+                top: e.clientY+scrollHight
               });
             setTimeout(function() {
               $('.cursor')
                 .eq(1)
                 .css({
                   left: e.clientX,
-                  top: e.clientY
+                  top: e.clientY+scrollHight
                 });
             }, 100);
           })

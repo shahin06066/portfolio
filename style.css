@@ -984,6 +984,11 @@ section:nth-child(odd) .animate.scroll,
 
 
 @media (max-width:768px) {
+
+    .cursor{
+        display: none;
+    }
+    
     .header {
         background: var(--bg-color);
     }
