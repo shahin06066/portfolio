@@ -1,38 +1,5 @@
 
 // Script.js
-
-
-
-
-
-// //toastfy code here
-// var myToastforsuccess = Toastify({
-//     text: "Email has sent successfully",
-//     duration: 5000,
-//      // Show toast close icon
-//   close: false,
-//   // Toast position - top or bottom
-//   gravity: 'bottom',
-//   // Toast position - left or right
-//   positionLeft: false,
-//   position: 'left',
-//    })
-
-
-//    //toastfy code here
-// var myToastforerror = Toastify({
-//     text: "There was a server side problem",
-//     duration: 5000,
-//      // Show toast close icon
-//   close: false,
-//   // Toast position - top or bottom
-//   gravity: 'bottom',
-//   // Toast position - left or right
-//   positionLeft: false,
-//   position: 'left',
-//    })
-
-
 function SendMail() {
 
     var params = {

@@ -194,11 +194,6 @@ section {
 
 }
 
-/* .home-imgHover:hover {
-    background: var(--bg-color);
-    opacity: .8;
-} */
-
 .home-content {
     max-width: 60rem;
     z-index: 99;
@@ -265,7 +260,7 @@ section {
 
 .home-content p {
     position: relative;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 2rem 0 4rem;
     width: 40rem;
 }
@@ -295,6 +290,7 @@ section {
     z-index: 1;
     overflow: hidden;
     transition: .5s;
+    font-size: 1.7rem;
 }
 
 .btn-box .btn:hover {
@@ -411,7 +407,7 @@ section {
 }
 
 .about-content p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 2rem 0 3rem;
     width: 60%;
     text-align: center;
