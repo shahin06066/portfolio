@@ -15,9 +15,9 @@
 
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     display: none;
-}
+} */
   
 
 :root {
@@ -64,27 +64,12 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* costom cursor */
 .cursor{
     position: absolute;
     border-radius: 50%;
     transform: translateX(-50%) translateY(-50%);
-    transition: .5s ease-out;
+    transition: .9s ease-out;
     z-index: 100;
 }
 
@@ -96,10 +81,13 @@ body {
   }
   .cTwo{
     background-color: #ffffff;
-    height: 6px;
-    width: 6px;
+    height: 7px;
+    width: 7px;
   }
 
+  /* preloader */
+ 
+/* preloader ends from here */
 
 .header {
     position: fixed;
@@ -769,6 +757,44 @@ span {
 
 
 /* Contact section start here */
+.box {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    /* background: #081B29; */
+    background-color: var(--bg-color);
+    position: relative;
+    /* padding: 30px; */
+    margin: .8rem 0 2.7rem;
+    display: flex;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+
+  }
+
+
+  .box::after,
+  .box::before {
+    content: "";
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    position: absolute;
+    border-radius: .6rem;
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+    animation: animated-shadow 12s linear infinite alternate;
+  }
+
+  .box::after {
+    filter: blur(30px);
+  }
+
+
+
+
 .contact {
     min-height: auto;
     padding-bottom: 7rem;
@@ -883,6 +909,21 @@ span {
 }
 
 /* ANIMATION RELOAD AND SCROOL */
+
+@keyframes animated-shadow {
+    0% {
+      background-position: 0 0;
+    }
+
+    50% {
+      background-position: 100% 0;
+    }
+
+    100% {
+      background-position: 0 0;
+    }
+  }
+
 .animate {
     position: absolute;
     top: 0;
